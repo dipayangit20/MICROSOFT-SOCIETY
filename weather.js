@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const get_weather = document.getElementById("get_weather");
     const error_massage = document.getElementById("error_massage");
     
-    const API = "ea4da1bf6c07b9f5e028d1898ba708af";
+    const API = "";
 
     get_weather.addEventListener("click" , async () => {
         const city = Cityinput;
@@ -48,5 +48,6 @@ function showError(error){
     error_massage.classList.remove("hidden");
     error_massage.textContent = error.message || "An error occurred";
 }
+
 
 });
